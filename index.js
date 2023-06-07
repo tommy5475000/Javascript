@@ -3,7 +3,7 @@ function tinhcong(){
     let snc = +document.getElementById("ngaycong").value;
     tongcong=snc*100000;
     let kq = document.getElementById("ketqua");
-    kq.innerHTML=`${tongcong}`;
+    kq.innerHTML = tongcong.toLocaleString();
     kq.classList.remove("hide");
 }
 
@@ -16,7 +16,7 @@ function tinhtt(){
     let st5=+document.getElementById("sothuc5").value;
     trungbinh=(st1+st2+st3+st4+st5)/5;
     let kqtt=document.getElementById("ketquatt");
-    kqtt.innerHTML=`${trungbinh}`;
+    kqtt.innerHTML= trungbinh;
     kqtt.classList.remove("hide");
 }
 
@@ -25,7 +25,7 @@ function doitien(){
     let sotien=+document.getElementById("usd").value;
     tien=sotien*23500;
     let thanhtien=document.getElementById("thanhtienvnd");
-    thanhtien.innerHTML=`${tien}`;
+    thanhtien.innerHTML=tien.toLocaleString();
     thanhtien.classList.remove("hide");
 }
 
